@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+
+    <style>
+        [class*="col-1"] {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        img{
+            width: 100%;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+     <script>
+        $(document).ready(function () {
+            $("#btnModal").click(function () {
+            $("#myModal").modal();
+            });
+            $("#hoten").blur(ktten);
+            $("#email").blur(ktemail);
+            $("#diachi").blur(ktdiachi);
+            $("#sdt").blur(ktrasdt);
+            var i = 2;
+            $("#save").click(function() {
+                    var ten = $("#hoten").val();
+                    var cmnd = $("#cmnd").val();
+                    var diaChi = $("#diachi").val();
+                    var email = $("#email").val();
+                    var sdt = $("#sdt").val();
+
+                    
+                    var add = "<tr><td>" + (i++) + "</td><td>" + ten + "</td><td>" + email +"</td><td>" + ngaysinh + "</td><td>" + gioitinh + "</td><td>"+ diachi + "</td><td>" + sdt +"</td></tr>";
+                    $("table tbody").append(add);
+                    $("#myModal").val("hide");
+                    return true;
+                
+            });
+         });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="../img/z3885491463458_719a5ff4aad0f2486217c5dc9a335cbc.jpg" alt="">
+        </div>
+        <div class="row">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-nav active">
+                             <a class="nav-link text-primary" href="../html/Trang Chủ.html" id="">Trang Chủ</a>
+                        </li>
+                        <li class="navbar-nav active">
+                            <a class="nav-link text-primary" href="../html/Gioithieu.html" id="">Giới Thiệu</a>
+                       </li>
+                         <li>
+                            <a class="nav-link text-primary" href="../html/dangnhap.html" id="">Đăng Nhập<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav=item">
+                            <a class="nav-link text-primary" href="#" id="btnModal">Đăng Ký</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="">
+            <h3>DANH SÁCH ĐĂNG KÍ THÀNH CÔNG</h3>
+        </div>
+        <div class="">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Họ Tên</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ngày Sinh</th>
+                <th scope="col">Giới Tính</th>
+                <th scope="col">Địa Chỉ</th>
+                <th scope="col">Điện Thoại</th>
+              </tr>
+            </thead>
+            <tbody>
+              <th scope="col">Nguyễn Văn A</th>
+                <td scope="col">a@iuh.edu.vn</td>
+                <td scope="col">07/08/2002</td>
+                <td scope="col">Nam</td>
+                <td scope="col">An Giang</td>
+                <td scope="col">0915-698-302</td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+<div
+  class="modal fade"
+  id="myModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"> 
+  <form>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">ĐĂNG KÍ TÀI KHOẢN</h2>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="modal-body">
+          <div class="">
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label"
+                  >Tên Đăng Nhập</label
+                >
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tendangnhap"
+                  placeholder=""
+                />
+                <span class="text-danger" id="tbtendangnhap">*</span>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label"
+                  >Mật Khẩu</label
+                >
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="matkhau"
+                  placeholder=""
+                />
+                <span class="text-danger" id="tbmatkhau">*</span>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label"
+                  >Nhập Lại Mật Khẩu</label
+                >
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nhaplaimatkhau"
+                  placeholder=""
+                />
+                <span class="text-danger" id="tbnhaplaimatkhau">*</span>
+              </div>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">THÔNG TIN CÁ NHÂN</h5>
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label">Họ tên</label>
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="hoten"
+                  placeholder="Nhập họ tên"
+                />
+                <span class="text-danger" id="tbhoten">*</span>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label">Email</label>
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Nhập email"
+                />
+                <span id="tbemail" class="text-danger">*</span>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label">Ngày Sinh</label>
+              </div>
+              <div class="col-8">
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="ngaysinh"
+                  placeholder=""
+                />
+                <span id="tbngaysinh" class="text-danger">*</span>
+              </div>
+            </div>   
+            <div class="row mt-2">
+              <div class="col-4">
+                <label for="" class="col-form-label">Giới Tính </label> <br>
+                <input type="radio" name="gioitinh" value="Nam" id="gioitinh">Nam <br>
+                <input type="radio" name="gioitinh" value="Nữ" id="gioitinh">Nữ
+              </div>
+            </div>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <label for="" class="col-form-label">Địa Chỉ</label>
+                </div>
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="diachi"
+                    placeholder="Nhập địa chỉ"
+                  />
+                  <span id="tbdiachi" class="text-danger">*</span>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <label for="" class="col-form-label">Số Điện Thoại</label>
+                </div>
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sdt"
+                    placeholder="XXXX-XXX-XXX"
+                  />
+                  <span id="tbsdt" class="text-danger">*</span>
+                </div>
+              </div>      
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success col-12 " data-dismiss="modal" id = "save">Đăng Kí</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+    </div>
+</body>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        [class*="col-1"] {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        img{
+            width: 100%;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            background-color: #6fdb59;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+        .form-checkbox{
+            width: 250px;
+            margin: 10px auto;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        .form-checkbox .checkbox-item{
+            display: block;
+            font-weight: bold;   
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="../img/z3885491463458_719a5ff4aad0f2486217c5dc9a335cbc.jpg" alt="">
+        </div>
+        <div class="row">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-nav active">
+                             <a class="nav-link text-primary" href="#" id="">Trang Chủ</a>
+                        </li>
+                        <li class="navbar-nav active">
+                            <a class="nav-link text-primary" href="../html/Gioithieu.html" id="">Giới Thiệu</a>
+                       </li>
+                         <li>
+                            <a class="nav-link text-primary" href="../html/dangnhap.html" id="">Đăng Nhập<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav=item">
+                            <a class="nav-link text-primary" href="../html/Dangki.html" id="btnModal">Đăng Ký</a>
+                        </li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    <div class="row">
+        <div class="col-4">
+            <h3>Hãng Sản Xuất</h3> <br>
+            <div class="form-checkbox">
+                <label for="1" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="1">OPPO <br>
+                </label>
+                <label for="2" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="2">Samsung <br>
+                </label>
+                <label for="3" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="3">Apple <br>
+                </label>
+                <label for="4" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="4">Vivo <br>
+                </label>
+                <label for="5" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="5">Nokia <br>
+                </label>
+                <label for="6" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="6">Realme <br>
+                </label>
+                <label for="7" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="phone" id="7">Xiaomi
+                </label>    
+            </div>
+            <h3>Mức Giá</h3> <br>
+            <div class="form-checkbox">
+                <label for="8" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="gia" id="8">Dưới 2 triệu <br>
+                </label>
+                <label for="9" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="gia" id="9">2 triệu đến 5 triệu <br>
+                </label>
+                <label for="10" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="gia" id="">5 triệu đến 10 triệu <br>
+                </label>
+                <label for="11" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="gia" id="10">10 triệu đến 20 triệu <br>
+                </label>
+                <label for="12" class="checkbox-item">
+                    <input type="checkbox" class="checkbox" name="gia" id="11">Trên 20 triệu
+                </div>
+                </label>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="wrapper">
+             <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone1.html" class="product-thumb">
+                                <img src="../img/anh-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone1.html" class="product-name">iPhone 14 Pro 128GB</a>
+                            <div class="product-price">30.590.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone2.html" class="product-thumb">
+                                <img src="../img/anh-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone2.html" class="product-name">OPPO A54</a>
+                            <div class="product-price">3.690.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone3.html" class="product-thumb">
+                                <img src="../img/anh-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone3.html" class="product-name">Vivo V23 5G</a>
+                            <div class="product-price">11.690.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone4.html" class="product-thumb">
+                                <img src="../img/anh-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone4.html" class="product-name">SamSung Galaxy S21 FE 5G</a>
+                            <div class="product-price">12.990.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone5.html" class="product-thumb">
+                                <img src="../img/anh-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone5.html" class="product-name">OPPO Reno7</a>
+                            <div class="product-price">7.590.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone6.html" class="product-thumb">
+                                <img src="../img/anh-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone6.html" class="product-name">Nokia C31 </a>
+                            <div class="product-price">2.790.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone7.html" class="product-thumb">
+                                <img src="../img/anh-7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone7.html" class="product-name">Realme C35 64G</a>
+                            <div class="product-price">3.990.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone8.html" class="product-thumb">
+                                <img src="../img/anh-8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone8.html" class="product-name">OPPO Reno8 Pro</a>
+                            <div class="product-price">18.990.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone9.html" class="product-thumb">
+                                <img src="../img/anh-9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone9.html" class="product-name">Xiaomi Redmi Note 11</a>
+                            <div class="product-price">4.490.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone10.html" class="product-thumb">
+                                <img src="../img/anh-10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone10.html" class="product-name">Xiaomi Redmi Note 11S Series</a>
+                            <div class="product-price">5.890.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone11.html" class="product-thumb">
+                                <img src="../img/anh-11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone11.html" class="product-name">OPPO A55</a>
+                            <div class="product-price">4.190.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../html/phone12.html" class="product-thumb">
+                                <img src="../img/anh-12.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../html/phone12.html" class="product-name">iPhone 13 Pro Max</a>
+                            <div class="product-price">28.490.000 Vnd</div>
+                        </div>
+                    </div>
+                </li>
+             </ul>
+            </div>    
+        </div>
+    </div>
+    </div>
+</body>
+</html>
